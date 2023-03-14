@@ -32,7 +32,7 @@ const seattle = {
     this.getCookiesPerHr();
     for (let i = 0; i < hours.length; i++) {
       let item = document.createElement('li');
-      item.textContent = `${hours[i]}; ${this.cookiesPerHr[i]} cookies`;
+      item.textContent = `${hours[i]}: ${this.cookiesPerHr[i]} cookies`;
       seattleList.appendChild(item);
     }
     let item = document.createElement('li');
@@ -73,7 +73,7 @@ const tokyo = {
     this.getCookiesPerHr();
     for (let i = 0; i < hours.length; i++) {
       let item = document.createElement('li');
-      item.textContent = `${hours[i]}; ${this.cookiesPerHr[i]} cookies`;
+      item.textContent = `${hours[i]}: ${this.cookiesPerHr[i]} cookies`;
       tokyoList.appendChild(item);
     }
     let item = document.createElement('li');
@@ -114,7 +114,7 @@ const dubai = {
     this.getCookiesPerHr();
     for (let i = 0; i < hours.length; i++) {
       let item = document.createElement('li');
-      item.textContent = `${hours[i]}; ${this.cookiesPerHr[i]} cookies`;
+      item.textContent = `${hours[i]}: ${this.cookiesPerHr[i]} cookies`;
       dubaiList.appendChild(item);
     }
     let item = document.createElement('li');
@@ -155,7 +155,7 @@ const paris = {
     this.getCookiesPerHr();
     for (let i = 0; i < hours.length; i++) {
       let item = document.createElement('li');
-      item.textContent = `${hours[i]}; ${this.cookiesPerHr[i]} cookies`;
+      item.textContent = `${hours[i]}: ${this.cookiesPerHr[i]} cookies`;
       parisList.appendChild(item);
     }
     let item = document.createElement('li');
@@ -196,7 +196,7 @@ const lima = {
     this.getCookiesPerHr();
     for (let i = 0; i < hours.length; i++) {
       let item = document.createElement('li');
-      item.textContent = `${hours[i]}; ${this.cookiesPerHr[i]} cookies`;
+      item.textContent = `${hours[i]}: ${this.cookiesPerHr[i]} cookies`;
       limaList.appendChild(item);
     }
     let item = document.createElement('li');

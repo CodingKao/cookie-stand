@@ -1,3 +1,24 @@
+.body1 {
+    text-align: center;
+    background-color: rgb(218, 172, 167);
+}
+
+.body2 {
+    background-color: rgb(218, 172, 167);
+}
+
 h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sales {
+    font-size: medium;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
     font-family: 'Roboto', sans-serif;
 }

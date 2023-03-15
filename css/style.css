@@ -25,3 +25,13 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+#cookieSales, th, td {
+    text-align: center;
+    background-color: rgb(166, 248, 244);
+    border: 1px solid;
+    margin: auto;
+    margin-top: auto;
+    height: auto;
+}

@@ -1,32 +1,58 @@
 /* Body color */
 .body1 {
-    text-align: center;
     background-color: rgb(218, 172, 167);
+    max-width: 1000px;
+    margin: 0 auto;
+    height: calc(100vh - 200px);
+    text-align: center;
 }
 
-/* Body color */
-.body2 {
-    background-color: rgb(218, 172, 167);
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
 }
 
 .sales {
     font-size: medium;
 }
 
-footer {
-    text-align: center;
+
+
+
+.row {
+    display: flex;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
+.row2 {
+    display: flex;
+    height: 300px;
+    width: auto;
 }
 
+.contact-location {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .contact {
+    margin: 25x;
+}
+
+.location {
+    margin: 25px;
+} */
 
 
+/* Sales Data */
 #cookieSales, th, td {
     text-align: center;
     background-color: rgb(166, 248, 244);
@@ -34,4 +60,18 @@ h1 {
     margin: auto;
     margin-top: auto;
     height: auto;
+}
+
+#chinook {
+    height: 300px;
+    width: auto;
+}
+
+/* Body color */
+.body2 {
+    background-color: rgb(218, 172, 167);
+}
+
+footer {
+    text-align: center;
 }

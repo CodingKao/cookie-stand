@@ -12,12 +12,24 @@
 h1 {
     font-family: 'Zilla Slab Highlight', cursive;
     font-size: 75px;
-    color: brown;
+    color: rgb(29, 114, 70);
+}
+
+@media (max-width: 375px) {
+    h1 {
+      font-size: 50px;  
+    }
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
+    color: rgb(29, 121, 121);
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
     color: rgb(29, 121, 121);
 }
 
@@ -81,3 +93,4 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     color: darkcyan;
 }
+

@@ -23,3 +23,6 @@ So, in addition to building an application that calculates daily sales projectio
 
 ### Lab 09 Lighthouse
 ![Lighthouse](img/lighthouselab09.jpg)
+
+### Lab 10 Lighthouse
+![Lighthouse](img/lighthouselab10.jpg)

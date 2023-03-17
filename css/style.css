@@ -7,14 +7,18 @@
     text-align: center;
 }
 
+
+
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Zilla Slab Highlight', cursive;
     font-size: 75px;
+    color: brown;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
+    color: rgb(29, 121, 121);
 }
 
 p {
@@ -74,4 +78,6 @@ p {
 
 footer {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkcyan;
 }

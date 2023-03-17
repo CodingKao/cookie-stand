@@ -152,7 +152,7 @@ formE1.addEventListener('submit', function (event) {
 
   console.log(name, typeof min_customers, typeof max_customers, typeof avgCookieSales);
 
-  let store = new Cookiestore(name,min_customers,max_customers,avgCookieSales);
+  let store = new Cookiestore(name, min_customers, max_customers, avgCookieSales);
 
   console.log('New Store Update: ', allStores);
   store.render();

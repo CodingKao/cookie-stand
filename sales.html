@@ -27,9 +27,45 @@
         </thead>
         <tbody id="table-values">
         </tbody>
+        <tfoot id="tfoot"></tfoot>
   
     </table>
  <ul id = 'storeList'></ul>
+
+
+<form id="StoreForm">
+    <fieldset>
+        <section>
+            <ledgend>Additional Stores</ledgend><br></br>
+
+            <label>New Store</label>
+            <input type="text" id="store_name_input" name="store_name" placeholder="New Store" required><br></br>
+        </section>
+        
+        <section>
+            <!-- <ledgend>Minimum Customer</ledgend><br></br> -->
+            <label>Minimum Customers</label>
+            <input type="text" id="min_customer_input" name="min_customer" placeholder="Minimum Customer" required> <br></br>
+        </section>
+
+        <section>
+            <!-- <ledgend>Maximum Customer</ledgend><br></br> -->
+            <label>Maximum Customer</label>
+            <input type="text" id="max_customer_input" name="max_customer" placeholder="Maximum Customer" required> <br></br>
+        </section>
+
+        <section>
+            <!-- <ledgend>Average Cookies Sales</ledgend><br></br> -->
+            <label>Average Cookie Sales</label>
+            <input type="text" id="avg_CookieSales_input" name="avg_CookieSales" placeholder="Average Cookie Sales" required><br></br>
+        </section>
+
+    </fieldset>
+    <button type="submit" id="button">
+        submit
+    </button>
+</form>
+
     <script src="app.js"></script>
 
     <footer>

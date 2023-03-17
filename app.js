@@ -5,6 +5,7 @@ function ranNumb(min, max) {
 const hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 
 let salesList = document.getElementById('storeList');
+let footerRow = document.getElementById('tfoot');
 
 let table = document.getElementById('cookieSales');
 console.log(table);
@@ -82,10 +83,18 @@ function renderHeader() {
 }
 renderHeader();
 
+let total = document.createElement('th');
+
+let footer = document.createElement('th');
+let gtotal = document.createElement('th');
+let colTotal = document.createElement('th');
+
 // Table Footer
 function renderFooter() {
   let row = document.createElement('tr');
-  let total = document.createElement('th');
+  footer.textContent = '';
+  row.textContent = '';
+
   total.textContent = 'Totals';
   row.appendChild(total);
   let grandTotal = 0;
@@ -95,16 +104,16 @@ function renderFooter() {
       colTotal += allStores[j].cookiesPerHr[i];
       grandTotal += allStores[j].cookiesPerHr[i];
     }
-
-    let footer = document.createElement('th');
-    footer.textContent = colTotal;
-    row.appendChild(footer);
+    const tableData = document.createElement('td');
+    tableData.textContent = colTotal;
+    row.appendChild(tableData);
   }
-  let gtotal = document.createElement('th');
+
   gtotal.textContent = grandTotal;
   row.appendChild(gtotal);
-  tableBody.appendChild(row);
+  footerRow.appendChild(row);
 }
+
 let seattleList = document.getElementById('seattlelist');
 let seattle = new Cookiestore('Seattle', 23, 65, 6.3);
 let tokyo = new Cookiestore('Tokyo', 3, 24, 1.2);
@@ -115,5 +124,40 @@ let lima = new Cookiestore('Lima', 2, 16, 4.6);
 for (let i = 0; i < allStores.length; i++) {
   allStores[i].render();
 }
+
+
+// Form
+let buttonE1 = document.getElementById('button');
+let formE1 = document.getElementById('StoreForm');
+
+// function handleClick() {
+//   console.log('click has happened');
+// }
+
+// buttonE1.addEventListener('click', handleClick);
+
+formE1.addEventListener('submit', function (event) {
+  event.preventDefault();
+  console.log('New Store Submitted');
+  console.log('event.target', event.target);
+
+  let name = event.target.store_name.value;
+
+  let min_customers = parseInt(event.target.min_customer.value);
+
+  let max_customers = parseInt(event.target.max_customer.value);
+
+  let avgCookieSales = parseInt(event.target.avg_CookieSales.value);
+
+
+  console.log(name, typeof min_customers, typeof max_customers, typeof avgCookieSales);
+
+  let store = new Cookiestore(name,min_customers,max_customers,avgCookieSales);
+
+  console.log('New Store Update: ', allStores);
+  store.render();
+  row.innerHTML = '';
+  renderFooter();
+});
 
 renderFooter();
